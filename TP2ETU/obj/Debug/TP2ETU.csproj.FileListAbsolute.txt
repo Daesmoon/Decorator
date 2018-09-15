@@ -1,0 +1,55 @@
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\Ghost.bmp
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\GhostScared.bmp
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\GhostWeak.bmp
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\None.bmp
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\Pacman.bmp
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\pacman_beginning.wav
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\pacman_chomp.wav
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\pacman_death.wav
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\pacman_eatghost.wav
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\Wall.bmp
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\csfml-audio-2.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\csfml-graphics-2.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\csfml-network-2.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\csfml-system-2.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\csfml-window-2.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Levels\Level1.txt
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\libsndfile-1.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\openal32.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\OpenTK.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\Assets\Pacman2.bmp
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\TP2PROF.exe.config
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\TP2PROF.exe
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\TP2PROF.pdb
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\sfmlnet-audio-2.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\sfmlnet-graphics-2.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\sfmlnet-system-2.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\bin\Debug\sfmlnet-window-2.dll
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\obj\Debug\TP2ETU.csprojAssemblyReference.cache
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\obj\Debug\TP2ETU.csproj.CoreCompileInputs.cache
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\obj\Debug\TP2ETU.csproj.CopyComplete
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\obj\Debug\TP2PROF.exe
+C:\Users\Kasandra\Desktop\Cours\2017 Hiver\Programmation de jeux vidéo II\TP2\TP2_kBrassard_kLeclaire\TP2ETU\TP2ETU\obj\Debug\TP2PROF.pdb
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\csfml-audio-2.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\csfml-graphics-2.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\csfml-network-2.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\csfml-system-2.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\csfml-window-2.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\Levels\Level1.txt
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\libsndfile-1.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\openal32.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\OpenTK.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\TP2PROF.exe.config
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\TP2PROF.exe
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\TP2PROF.pdb
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\sfmlnet-audio-2.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\sfmlnet-graphics-2.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\sfmlnet-system-2.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\bin\Debug\sfmlnet-window-2.dll
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\obj\Debug\TP2ETU.csprojAssemblyReference.cache
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\obj\Debug\TP2ETU.csproj.CoreCompileInputs.cache
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\obj\Debug\TP2ETU.csproj.CopyComplete
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\obj\Debug\TP2PROF.exe
+C:\Users\Kasandra\source\repos\TP2ETU\TP2ETU\obj\Debug\TP2PROF.pdb
