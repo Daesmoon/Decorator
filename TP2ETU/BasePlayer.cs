@@ -13,7 +13,7 @@ namespace Decorator
 
         public override void Move(int direction)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         protected override void SetMovementSpeed()
@@ -23,7 +23,7 @@ namespace Decorator
 
         public override void SetSprite()
         {
-            playerTexture = new Texture("Assets/Poulpi.bmp");
+            playerTexture = new Texture("Assets/Pacman.bmp");
             playerSprite = new Sprite(playerTexture);
         }
 
@@ -37,5 +37,10 @@ namespace Decorator
         {
             return playerSprite;
         }
-  }
+
+        public override Vector2f GetPosition()
+        {
+            return playerSprite.Position;
+        }
+    }
 }

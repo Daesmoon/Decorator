@@ -1,4 +1,5 @@
 ﻿using SFML.Graphics;
+using SFML.System;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace Decorator
         protected abstract void SetMovementSpeed();
         public abstract void Move(int direction);
         public abstract Sprite GetSprite();
+        public abstract Vector2f GetPosition();
     }
 }

@@ -15,7 +15,7 @@ namespace Decorator
         private BluePlayerDecorator bluePlayer = null;
         private GreenGunDecorator greenGun = null;
 
-        private Texture backgroundTexture = new Texture("Assets/Wall.bmp");
+        private Texture backgroundTexture = new Texture("Assets/None.bmp");
         private Sprite backgroundSprite = null;
 
         public Game()
@@ -23,8 +23,6 @@ namespace Decorator
             player = new BasePlayer();
             redPlayer = new RedPlayerDecorator(player);
             backgroundSprite = new Sprite(backgroundTexture);
-
-            redPlayer.GetSprite().Position = new Vector2f(GAME_WIDTH / 2, GAME_HEIGHT / 2); //probleme avec les sprites
         }
 
         public void Update(Keyboard.Key key)
@@ -37,6 +35,8 @@ namespace Decorator
             {
                 redPlayer.Move(1);
             }
+
+            redPlayer.GetSprite().Position = redPlayer.GetPosition();
         }
 
         public void Draw(RenderWindow window)
@@ -45,11 +45,12 @@ namespace Decorator
             {
                 for (int col = 0; col < (GAME_WIDTH / BACKGROUND_TILE_DIMENSION); col++)
                 {
-                    backgroundSprite.Position = new Vector2f(col * 20, row * 20);
+                    backgroundSprite.Position = new Vector2f(col * (GAME_WIDTH / BACKGROUND_TILE_DIMENSION), row * (GAME_HEIGHT / BACKGROUND_TILE_DIMENSION));
                     window.Draw(backgroundSprite);
                 }
             }
 
+            
             window.Draw(redPlayer.GetSprite());              
         }
     }

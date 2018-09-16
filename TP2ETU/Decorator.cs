@@ -46,6 +46,9 @@ namespace Decorator
                 playerSprite.Scale(-1, 1);
             }*/
             position.X = position.X + direction * speed;
+
+            playerSprite.Position = position;
+            playerSprite.Transform.Translate(position);
         }
 
         protected override void SetMovementSpeed()
@@ -57,5 +60,5 @@ namespace Decorator
         {
             return playerSprite;
         }
-  }
+    }
 }

@@ -1,4 +1,5 @@
 ﻿using SFML.Graphics;
+using SFML.System;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,11 @@ namespace Decorator
         public GreenGunDecorator(Component baseComponent) : base(baseComponent)
         {
 
+        }
+
+        public override Vector2f GetPosition()
+        {
+            throw new NotImplementedException();
         }
 
         public override void SetWeaponSprite()

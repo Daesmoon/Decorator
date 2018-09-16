@@ -1,4 +1,5 @@
 ﻿using SFML.Graphics;
+using SFML.System;
 
 namespace Decorator
 {
@@ -18,6 +19,11 @@ namespace Decorator
         {
             //playerTexture = new Texture("Assets/PoulpiBleu.bmp"); //Trouver un sprite pour PoulpiBleu
             //playerSprite = new Sprite(playerTexture);
+        }
+
+        public override Vector2f GetPosition()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

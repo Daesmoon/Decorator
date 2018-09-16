@@ -10,23 +10,26 @@ namespace Decorator
 {
     class RedPlayerDecorator : Decorator
     {
-
         public RedPlayerDecorator(Component baseComponent) : base(baseComponent)
         {
-                   
+            SetSprite();
         }
 
         protected override void SetMovementSpeed()
         {
             speed = 5f;
         }
-
         
         public override void SetSprite()
         {
-            playerTexture = new Texture("Assets/PoulpiRed.bmp");
+            playerTexture = new Texture("Assets/Pacman2.bmp");
             playerSprite = new Sprite(playerTexture);
+            playerSprite.Position = position;
         }
-        
-  }
+
+        public override Vector2f GetPosition()
+        {
+            return position;
+        }
+    }
 }

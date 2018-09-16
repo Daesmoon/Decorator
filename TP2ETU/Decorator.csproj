@@ -88,6 +88,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Ghost.bmp" />
+    <Content Include="Assets\GhostScared.bmp" />
+    <Content Include="Assets\GhostWeak.bmp" />
+    <Content Include="Assets\None.bmp" />
+    <Content Include="Assets\Pacman.bmp" />
+    <Content Include="Assets\Pacman2.bmp" />
     <Content Include="Assets\Poulpi.bmp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

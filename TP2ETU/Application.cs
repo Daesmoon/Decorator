@@ -6,7 +6,7 @@ namespace Decorator
 {
     class Application
     {
-        private const int MAX_FPS = 40;
+        private const int MAX_FPS = 20;
         private const string WINDOW_TITLE = "Decorator";
 
         private RenderWindow window = null;
@@ -38,10 +38,9 @@ namespace Decorator
             window.KeyReleased += new EventHandler<KeyEventArgs>(OnKeyReleased);
             window.SetFramerateLimit(MAX_FPS);
 
-            System.Windows.Forms.Form form = new System.Windows.Forms.Form();
+            //System.Windows.Forms.Form form = new System.Windows.Forms.Form();
             //form.Site = 
         }
-
 
         public void Run()
         {
