@@ -38,7 +38,7 @@ namespace Decorator
             window.SetFramerateLimit(MAX_FPS);
         }
 
-        public void Run(string playerColor)
+        public void Run(ColorType playerColor)
         {
             game = new Game(playerColor);
             window.SetActive();

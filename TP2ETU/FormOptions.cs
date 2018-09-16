@@ -5,6 +5,7 @@ namespace Decorator
 {
     public partial class FormOptions : Form
     {
+        private bool condition;
         public FormOptions()
         {
             InitializeComponent();
@@ -12,19 +13,19 @@ namespace Decorator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string playerColor = "Red";
+            ColorType playerColor = ColorType.Red;
 
             if (radioButton1.Checked)
             {
-                playerColor = "Red";
+                playerColor = ColorType.Red;
             }
             if (radioButton2.Checked)
             {
-                playerColor = "Blue";
+                playerColor = ColorType.Blue;
             }
             if (radioButton3.Checked)
             {
-                playerColor = "Green";
+                playerColor = ColorType.Green;
             }
 
             ApplicationGame app = new ApplicationGame();
