@@ -10,33 +10,40 @@ namespace Decorator
         public const int GAME_HEIGHT = 400;
         private const int BACKGROUND_TILE_DIMENSION = 20;
 
-        private BasePlayer player = null;
+        private BasePlayer basePlayer = null;
         private RedPlayerDecorator redPlayer = null;
         private BluePlayerDecorator bluePlayer = null;
+        private GreenPlayerDecorator greenPlayer = null;
         private GreenGunDecorator greenGun = null;
 
         private Texture backgroundTexture = new Texture("Assets/None.bmp");
         private Sprite backgroundSprite = null;
 
+        private RectangleShape player;
+
         public Game()
         {
-            player = new BasePlayer();
-            redPlayer = new RedPlayerDecorator(player);
+            basePlayer = new BasePlayer();
+            redPlayer = new RedPlayerDecorator(basePlayer);
+            bluePlayer = new BluePlayerDecorator(basePlayer);
+            greenPlayer = new GreenPlayerDecorator(basePlayer);
             backgroundSprite = new Sprite(backgroundTexture);
+
+            player = bluePlayer.GetShape();
         }
 
         public void Update(Keyboard.Key key)
         {
             if (key == Keyboard.Key.A)
             {
-                redPlayer.Move(-1);
+                //redPlayer.Move(-1);
+                bluePlayer.Move(-1);
             }
             else if (key == Keyboard.Key.D)
             {
-                redPlayer.Move(1);
+                //redPlayer.Move(1);
+                bluePlayer.Move(1);
             }
-
-            //redPlayer.GetSprite().Position = redPlayer.GetPosition();
         }
 
         public void Draw(RenderWindow window)
@@ -49,9 +56,9 @@ namespace Decorator
                     window.Draw(backgroundSprite);
                 }
             }
-
-            redPlayer.Draw(window);
-            //window.Draw(redPlayer.GetSprite());              
+            
+            //window.Draw(redPlayer.GetShape());
+            window.Draw(bluePlayer.GetShape());
         }
     }
 }

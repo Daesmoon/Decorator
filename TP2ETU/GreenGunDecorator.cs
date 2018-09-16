@@ -12,15 +12,9 @@ namespace Decorator
     {
         public GreenGunDecorator(Component baseComponent) : base(baseComponent)
         {
-
         }
 
-        public override void Draw(RenderWindow window)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override Vector2f GetPosition()
+        public override RectangleShape GetShape()
         {
             throw new NotImplementedException();
         }

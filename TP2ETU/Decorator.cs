@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SFML.Graphics;
+﻿using SFML.Graphics;
 using SFML.System;
 
 namespace Decorator
@@ -13,22 +8,29 @@ namespace Decorator
         private Component baseComponent;
         protected Texture weaponTexture;
         protected Sprite weaponSprite;
-        protected Texture playerTexture;
-        protected Sprite playerSprite;
+        //protected Texture playerTexture;
+        //protected Sprite playerSprite;
         protected Vector2f position;
-        protected float speed = 5;
+        protected float speed;
+        protected Vector2f playerSize = new Vector2f(50, 50);
+        protected RectangleShape playerShape;
+
 
         protected Decorator(Component baseComponent)
         {
             this.baseComponent = baseComponent;
+            position = new Vector2f(Game.GAME_WIDTH / 2, Game.GAME_HEIGHT - 50);
+            speed = 5;
         } 
 
         public override void SetSprite()
         {
-            playerTexture = new Texture("Assets/Poulpi.bmp");
-            playerSprite = new Sprite(playerTexture);
-            playerSprite.Origin = new Vector2f(playerTexture.Size.X / 2, playerTexture.Size.Y / 2);
-            position = new Vector2f(Game.GAME_WIDTH / 2, Game.GAME_HEIGHT - playerTexture.Size.Y);            
+            //playerTexture = new Texture("Assets/Poulpi.bmp");
+            //playerSprite = new Sprite(playerTexture);
+            //playerSprite.Origin = new Vector2f(playerTexture.Size.X / 2, playerTexture.Size.Y / 2);
+            //position = new Vector2f(Game.GAME_WIDTH / 2, Game.GAME_HEIGHT - playerTexture.Size.Y);
+
+            playerShape = new RectangleShape(new Vector2f(50, 50));
         }
 
         public override void SetWeaponSprite()
@@ -41,8 +43,9 @@ namespace Decorator
         {
             position.X = position.X + direction * speed;
 
-            playerSprite.Position = position;
-            playerSprite.Transform.Translate(position);
+            //playerSprite.Position = position;
+            playerShape.Position = position;
+
         }
 
         protected override void SetMovementSpeed()
@@ -50,9 +53,9 @@ namespace Decorator
             speed = 2f;
         }
 
-        public override Sprite GetSprite()
+        /*public override Sprite GetSprite()
         {
             return playerSprite;
-        }
+        }*/
     }
 }

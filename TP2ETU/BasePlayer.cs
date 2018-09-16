@@ -8,8 +8,9 @@ namespace Decorator
     {
         protected Texture weaponTexture;
         protected Sprite weaponSprite;
-        protected Texture playerTexture;
-        protected Sprite playerSprite;
+        //protected Texture playerTexture;
+        //protected Sprite playerSprite;
+        private RectangleShape playerShape;
 
         public override void Move(int direction)
         {
@@ -23,8 +24,8 @@ namespace Decorator
 
         public override void SetSprite()
         {
-            playerTexture = new Texture("Assets/Pacman.bmp");
-            playerSprite = new Sprite(playerTexture);
+            //playerTexture = new Texture("Assets/Pacman.bmp");
+            //playerSprite = new Sprite(playerTexture);
         }
 
         public override void SetWeaponSprite()
@@ -33,19 +34,14 @@ namespace Decorator
             //weaponSprite = new Sprite(weaponTexture);
         }
 
-        public override Sprite GetSprite()
+        public override RectangleShape GetShape()
+        {
+            return playerShape;
+        }
+
+        /*public override Sprite GetSprite()
         {
             return playerSprite;
-        }
-
-        public override Vector2f GetPosition()
-        {
-            return playerSprite.Position;
-        }
-
-        public override void Draw(RenderWindow window)
-        {
-            window.Draw(playerSprite);
-        }
+        }*/
     }
 }

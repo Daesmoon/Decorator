@@ -1,10 +1,4 @@
 ﻿using SFML.Graphics;
-using SFML.System;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Decorator
 {
@@ -22,19 +16,18 @@ namespace Decorator
         
         public override void SetSprite()
         {
-            playerTexture = new Texture("Assets/Pacman2.bmp");
-            playerSprite = new Sprite(playerTexture);
-            playerSprite.Position = position;
+            //playerTexture = new Texture("Assets/Pacman.bmp");
+            //playerSprite = new Sprite(playerTexture);
+            //playerSprite.Position = position;
+
+            playerShape = new RectangleShape(playerSize);
+            playerShape.FillColor = Color.Red;
+            playerShape.Position = position;
         }
 
-        public override Vector2f GetPosition()
+        public override RectangleShape GetShape()
         {
-            return position;
-        }
-
-        public override void Draw(RenderWindow window)
-        {
-            window.Draw(playerSprite);
+            return playerShape;
         }
     }
 }

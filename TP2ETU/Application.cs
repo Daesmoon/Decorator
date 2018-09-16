@@ -6,7 +6,7 @@ namespace Decorator
 {
     class Application
     {
-        private const int MAX_FPS = 20;
+        private const int MAX_FPS = 40;
         private const string WINDOW_TITLE = "Decorator";
 
         private RenderWindow window = null;

@@ -14,8 +14,8 @@ namespace Decorator
         public abstract void SetWeaponSprite();
         protected abstract void SetMovementSpeed();
         public abstract void Move(int direction);
-        public abstract Sprite GetSprite();
-        public abstract Vector2f GetPosition();
-        public abstract void Draw(RenderWindow window);
+        //public abstract Sprite GetSprite();
+        //public abstract Vector2f GetPosition();
+        public abstract RectangleShape GetShape();
     }
 }

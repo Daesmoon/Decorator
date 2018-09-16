@@ -1,23 +1,23 @@
-﻿using SFML.Graphics;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using SFML.Graphics;
 
 namespace Decorator
 {
-    class BluePlayerDecorator : Decorator
+    class GreenPlayerDecorator : Decorator
     {
-        public BluePlayerDecorator(Component baseComponent) : base(baseComponent)
+        public GreenPlayerDecorator(Component baseComponent) : base(baseComponent)
         {
             SetSprite();
-        }
-
-        protected override void SetMovementSpeed()
-        {
-            speed = 0.5f;
         }
 
         public override void SetSprite()
         {
             playerShape = new RectangleShape(playerSize);
-            playerShape.FillColor = Color.Blue;
+            playerShape.FillColor = Color.Green;
             playerShape.Position = position;
         }
 
