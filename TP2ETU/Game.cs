@@ -15,90 +15,67 @@ namespace Decorator
         private RedPlayerDecorator redPlayer = null;
         private BluePlayerDecorator bluePlayer = null;
         private GreenPlayerDecorator greenPlayer = null;
-        //private GreenGunDecorator greenGun = null;
 
         private Texture backgroundTexture = new Texture("Assets/None.bmp");
         private Sprite backgroundSprite = null;
 
         private RectangleShape player;
-        private string playerColor;
+        private ColorType playerColor;
 
-        public Game(string playerColor)
+        //Constructeur
+        public Game(ColorType playerColor)
         {
             this.playerColor = playerColor;
 
             basePlayer = new BasePlayer();
             redPlayer = new RedPlayerDecorator(basePlayer);
             bluePlayer = new BluePlayerDecorator(basePlayer);
-            greenPlayer = new GreenPlayerDecorator(basePlayer);
-
-            /*if (playerColor == "Red")
-            {
-                redPlayer = new RedPlayerDecorator(basePlayer);
-                component = redPlayer;
-            }
-            else if (playerColor == "Blue")
-            {
-                bluePlayer = new BluePlayerDecorator(basePlayer);
-                component = bluePlayer;
-            }
-            else if (playerColor == "Green")
-            {
-                greenPlayer = new GreenPlayerDecorator(basePlayer);
-                component = greenPlayer;
-            }*/
-            
+            greenPlayer = new GreenPlayerDecorator(basePlayer);         
             backgroundSprite = new Sprite(backgroundTexture);
-
-            //player = bluePlayer.GetShape();
         }
 
+        //Méthode de mise à jour du joueur
         public void Update(Keyboard.Key key)
         {
-            /*if (key == Keyboard.Key.A)
+            switch (this.playerColor)
             {
-                component.Move(-1);
-            }
-            else if (key == Keyboard.Key.D)
-            {
-                component.Move(1);
-            }*/
+              case ColorType.Red:
+              if (key == Keyboard.Key.A)
+              {
+                redPlayer.Move(-1);
+              }
+              else if (key == Keyboard.Key.D)
+              {
+                redPlayer.Move(1);
+              }
+              break;
+                      
+              case ColorType.Blue:
+              if (key == Keyboard.Key.A)
+              {
+                bluePlayer.Move(-1);
+              }
+              else if (key == Keyboard.Key.D)
+              {
+                bluePlayer.Move(1);
+              }
+              break;
 
-            if(playerColor == "Red")
-            {
-                if (key == Keyboard.Key.A)
-                {
-                    redPlayer.Move(-1);
-                }
-                else if (key == Keyboard.Key.D)
-                {
-                    redPlayer.Move(1);
-                }
-            }
-            else if (playerColor == "Blue")
-            {
-                if(key == Keyboard.Key.A)
-            {
-                    bluePlayer.Move(-1);
-                }
-            else if (key == Keyboard.Key.D)
-                {
-                    bluePlayer.Move(1);
-                }
-            }
-            else if (playerColor == "Green")
-            {
-                if (key == Keyboard.Key.A)
-                {
-                    greenPlayer.Move(-1);
-                }
-                else if (key == Keyboard.Key.D)
-                {
-                    greenPlayer.Move(1);
-                }
+              case ColorType.Green:
+              if (key == Keyboard.Key.A)
+              {
+                greenPlayer.Move(-1);
+              }
+              else if (key == Keyboard.Key.D)
+              {
+                greenPlayer.Move(1);
+              }
+              break;
             }
         }
 
+        //Méthode pour dessiner le joueur
+        //paramètre: la fenêtre dans laquel on dessine le joueur
         public void Draw(RenderWindow window)
         {
             for (int row = 0; row < (GAME_HEIGHT / BACKGROUND_TILE_DIMENSION); row++)
@@ -110,19 +87,20 @@ namespace Decorator
                 }
             }
 
-            if (playerColor == "Red")
+            switch(this.playerColor)
             {
-                window.Draw(redPlayer.GetShape());
-            }
-            else if (playerColor == "Blue")
-            {
-                window.Draw(bluePlayer.GetShape());
-            }
-            else if (playerColor == "Green")
-            {
-                window.Draw(greenPlayer.GetShape());
-            }
-            //window.Draw(component.GetShape());
+              case ColorType.Red:
+              window.Draw(redPlayer.GetShape());
+              break;
+
+              case ColorType.Blue:
+              window.Draw(bluePlayer.GetShape());
+              break;
+
+              case ColorType.Green:
+              window.Draw(greenPlayer.GetShape());
+              break;
+            }         
         }
     }
 }

@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="ApplicationGame.cs" />
     <Compile Include="BluePlayerDecorator.cs" />
+    <Compile Include="ColorType.cs" />
     <Compile Include="Component.cs" />
     <Compile Include="BasePlayer.cs" />
     <Compile Include="Decorator.cs" />
@@ -88,7 +89,6 @@
     <Compile Include="FormOptions.Designer.cs">
       <DependentUpon>FormOptions.cs</DependentUpon>
     </Compile>
-    <Compile Include="GreenGunDecorator.cs" />
     <Compile Include="GreenPlayerDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
