@@ -37,7 +37,7 @@ namespace Decorator
             window.KeyReleased += new EventHandler<KeyEventArgs>(OnKeyReleased);
             window.SetFramerateLimit(MAX_FPS);
         }
-
+        //
         public void Run(ColorType playerColor)
         {
             game = new Game(playerColor);
