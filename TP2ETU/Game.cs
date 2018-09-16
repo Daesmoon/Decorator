@@ -15,8 +15,7 @@ namespace Decorator
         private RedPlayerDecorator redPlayer = null;
         private BluePlayerDecorator bluePlayer = null;
         private GreenPlayerDecorator greenPlayer = null;
-
-        private Texture backgroundTexture = new Texture("Assets/None.bmp");
+        
         private Sprite backgroundSprite = null;
 
         private RectangleShape player;
@@ -30,8 +29,7 @@ namespace Decorator
             basePlayer = new BasePlayer();
             redPlayer = new RedPlayerDecorator(basePlayer);
             bluePlayer = new BluePlayerDecorator(basePlayer);
-            greenPlayer = new GreenPlayerDecorator(basePlayer);         
-            backgroundSprite = new Sprite(backgroundTexture);
+            greenPlayer = new GreenPlayerDecorator(basePlayer);    
         }
 
         //Méthode de mise à jour du joueur
@@ -78,15 +76,6 @@ namespace Decorator
         //paramètre: la fenêtre dans laquel on dessine le joueur
         public void Draw(RenderWindow window)
         {
-            for (int row = 0; row < (GAME_HEIGHT / BACKGROUND_TILE_DIMENSION); row++)
-            {
-                for (int col = 0; col < (GAME_WIDTH / BACKGROUND_TILE_DIMENSION); col++)
-                {
-                    backgroundSprite.Position = new Vector2f(col * (GAME_WIDTH / BACKGROUND_TILE_DIMENSION), row * (GAME_HEIGHT / BACKGROUND_TILE_DIMENSION));
-                    window.Draw(backgroundSprite);
-                }
-            }
-
             switch(this.playerColor)
             {
               case ColorType.Red:
