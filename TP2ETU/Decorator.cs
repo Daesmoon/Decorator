@@ -10,41 +10,31 @@ namespace Decorator
 {
     public abstract class Decorator : Component
     {
-        protected RectangleShape playerShape = null;
         private Component baseComponent;
-        private BasePlayer basePlayer = null;
-        private RedPlayerDecorator redPlayer = null;
-        
-        //protected Texture weaponTexture = new Texture("Assets/Poulpi.bmp"); //TODO: changer
-        //protected Sprite weaponSprite = null;
+        protected Texture weaponTexture;
+        protected Sprite weaponSprite;
+        protected Texture playerTexture;
+        protected Sprite playerSprite;
+        protected Vector2f position = new Vector2f(200, 200);
         protected float speed;
-        //protected CircleShape shape = new CircleShape(50);
-        //protected float attackSpeed;
 
-        private Vector2f position = new Vector2f(200, 200);
-        //private Vector2f projectilePosition = new Vector2f();
 
         protected Decorator(Component baseComponent)
         {
             this.baseComponent = baseComponent;
-
-            //player = new RectangleShape();
-            //playerShape = new RedPlayerDecorator(baseComponent);
-            basePlayer = new BasePlayer();
-            redPlayer = new RedPlayerDecorator(basePlayer);
         } 
 
         public override void SetSprite()
         {
-            //playerSprite = new Sprite(playerTexture);
-            //playerSprite = new Sprite(playerTexture);
-            //playerSprite.Origin = new Vector2f(playerTexture.Size.X / 2, playerTexture.Size.Y / 2);
-            //position = new Vector2f(Game.GAME_WIDTH / 2, Game.GAME_HEIGHT - playerTexture.Size.Y);
-            
+            playerTexture = new Texture("Assets/Poulpi.bmp");
+            playerSprite = new Sprite(playerTexture);
+            playerSprite.Origin = new Vector2f(playerTexture.Size.X / 2, playerTexture.Size.Y / 2);
+            position = new Vector2f(Game.GAME_WIDTH / 2, Game.GAME_HEIGHT - playerTexture.Size.Y);            
         }
 
-        public override void SetWeapon()
+        public override void SetWeaponSprite()
         {
+            //weaponTexture = new Texture("Assets/Weapon.bmp"); //Trouver un sprite pour le Weapon
             //weaponSprite = new Sprite(weaponTexture);
         }
 
@@ -55,30 +45,17 @@ namespace Decorator
                 playerSprite.TextureRect(IntRect(0, 0, playerTexture.Size.X, -playerTexture.Size.Y));
                 playerSprite.Scale(-1, 1);
             }*/
-
             position.X = position.X + direction * speed;
-        }
-
-        public void Shoot()
-        {
-            //projectilePosition = new Vector2f(position.X - (playerTexture.Size.X / 2), position.Y);
-            //projectilePosition
-        }
-
-        public void Draw(RenderWindow window)
-        {
-            redPlayer.playerShape.Position = position;
-            window.Draw(redPlayer.playerShape);
         }
 
         protected override void SetMovementSpeed()
         {
-            speed = 1;
+            speed = 2f;
         }
 
-        protected override void SetAttackSpeed()
+        public override Sprite GetSprite()
         {
-            //attackSpeed = 1;
+            return playerSprite;
         }
-    }
+  }
 }

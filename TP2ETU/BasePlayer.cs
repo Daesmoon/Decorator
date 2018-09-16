@@ -1,17 +1,15 @@
-﻿using SFML.Graphics;
+﻿using System;
+using SFML.Graphics;
 using SFML.System;
 
 namespace Decorator
 {
     class BasePlayer : Component
     {
-        //public RectangleShape playerShape = null;
-
-        public BasePlayer()
-        {
-            //playerShape = new RectangleShape(new Vector2f(50, 50));
-            //playerShape.FillColor = Color.Black;
-        }
+        protected Texture weaponTexture;
+        protected Sprite weaponSprite;
+        protected Texture playerTexture;
+        protected Sprite playerSprite;
 
         public override void Move(int direction)
         {
@@ -25,19 +23,19 @@ namespace Decorator
 
         public override void SetSprite()
         {
-           //playerTexture = new Texture("Assets/Poulpi.bmp");
-            //playerSprite = new Sprite(playerTexture);
+            playerTexture = new Texture("Assets/Poulpi.bmp");
+            playerSprite = new Sprite(playerTexture);
         }
 
-        public override void SetWeapon()
+        public override void SetWeaponSprite()
         {
-            //weaponTexture = texture;
+            //weaponTexture = new Texture();
             //weaponSprite = new Sprite(weaponTexture);
         }
 
-        protected override void SetAttackSpeed()
+        public override Sprite GetSprite()
         {
-            throw new System.NotImplementedException();
+            return playerSprite;
         }
-    }
+  }
 }

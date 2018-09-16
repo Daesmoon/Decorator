@@ -11,12 +11,13 @@ namespace Decorator
     {
         public GreenGunDecorator(Component baseComponent) : base(baseComponent)
         {
-            //shape.FillColor = Color.Green;
+
         }
 
-        protected override void SetAttackSpeed()
+        public override void SetWeaponSprite()
         {
-            //attackSpeed = 0.5f;
+            weaponTexture = new Texture("Assets/GreenWeapon.bmp"); //Trouver sprite pour weapon vert
+            weaponSprite = new Sprite(weaponTexture);
         }
-    }
+  }
 }

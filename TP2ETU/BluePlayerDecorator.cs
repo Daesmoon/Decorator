@@ -6,13 +6,18 @@ namespace Decorator
     {
         public BluePlayerDecorator(Component baseComponent) : base(baseComponent)
         {
-            //playerTexture = new Texture("Assets/Poulpi.bmp");
-            //playerSprite = new Sprite(playerTexture);
+
         }
 
         protected override void SetMovementSpeed()
         {
             speed = 0.5f;
+        }
+
+        public override void SetSprite()
+        {
+            //playerTexture = new Texture("Assets/PoulpiBleu.bmp"); //Trouver un sprite pour PoulpiBleu
+            //playerSprite = new Sprite(playerTexture);
         }
     }
 }

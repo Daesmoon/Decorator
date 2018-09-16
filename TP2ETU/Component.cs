@@ -9,14 +9,10 @@ namespace Decorator
 {
     public abstract class Component
     {
-        //protected Texture playerTexture = null;
-        // protected Sprite playerSprite = null;
-        
-
         public abstract void SetSprite();
-        public abstract void SetWeapon();
+        public abstract void SetWeaponSprite();
         protected abstract void SetMovementSpeed();
-        protected abstract void SetAttackSpeed();
         public abstract void Move(int direction);
+        public abstract Sprite GetSprite();
     }
 }
