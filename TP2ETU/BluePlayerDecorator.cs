@@ -6,7 +6,7 @@ namespace Decorator
     {
         public BluePlayerDecorator(Component baseComponent) : base(baseComponent)
         {
-            SetSprite();
+            SetShape();
         }
 
         protected override void SetMovementSpeed()
@@ -14,7 +14,7 @@ namespace Decorator
             speed = 0.5f;
         }
 
-        public override void SetSprite()
+        public override void SetShape()
         {
             playerShape = new RectangleShape(playerSize);
             playerShape.FillColor = Color.Blue;

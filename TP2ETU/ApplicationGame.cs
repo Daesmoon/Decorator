@@ -4,7 +4,7 @@ using SFML.Window;
 
 namespace Decorator
 {
-    class Application
+    class ApplicationGame
     {
         private const int MAX_FPS = 40;
         private const string WINDOW_TITLE = "Decorator";
@@ -29,21 +29,18 @@ namespace Decorator
             lastKeyPressed = Keyboard.Key.Space;
         }
 
-        public Application()
+        public ApplicationGame()
         {
-            game = new Game();
             window = new RenderWindow(new VideoMode(Game.GAME_WIDTH, Game.GAME_HEIGHT), WINDOW_TITLE, Styles.Titlebar);
             window.Closed += new EventHandler(OnClose);
             window.KeyPressed += new EventHandler<KeyEventArgs>(OnKeyPressed);
             window.KeyReleased += new EventHandler<KeyEventArgs>(OnKeyReleased);
             window.SetFramerateLimit(MAX_FPS);
-
-            System.Windows.Forms.Form form = new System.Windows.Forms.Form();
-            //form.Site = 
         }
 
-        public void Run()
+        public void Run(string playerColor)
         {
+            game = new Game(playerColor);
             window.SetActive();
 
             while ((lastKeyPressed != Keyboard.Key.Escape) && window.IsOpen)

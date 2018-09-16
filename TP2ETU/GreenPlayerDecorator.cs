@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SFML.Graphics;
+﻿using SFML.Graphics;
 
 namespace Decorator
 {
@@ -11,10 +6,10 @@ namespace Decorator
     {
         public GreenPlayerDecorator(Component baseComponent) : base(baseComponent)
         {
-            SetSprite();
+            SetShape();
         }
 
-        public override void SetSprite()
+        public override void SetShape()
         {
             playerShape = new RectangleShape(playerSize);
             playerShape.FillColor = Color.Green;

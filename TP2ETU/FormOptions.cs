@@ -1,38 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Decorator
 {
     public partial class FormOptions : Form
     {
-        private int playerChoice = 0;
-
         public FormOptions()
         {
             InitializeComponent();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            string result = null;
-            foreach (Control control in this.groupBox1.Controls)
+            string playerColor = "Red";
+
+            if (radioButton1.Checked)
             {
-                if (control is RadioButton)
-                {
-                    RadioButton rb = control as RadioButton;
-                    if (rb.Checked)
-                    {
-                        result = rb.Text;
-                    }
-                }
+                playerColor = "Red";
             }
+            if (radioButton2.Checked)
+            {
+                playerColor = "Blue";
+            }
+            if (radioButton3.Checked)
+            {
+                playerColor = "Green";
+            }
+
+            ApplicationGame app = new ApplicationGame();
+            app.Run(playerColor);
         }
     }
 }

@@ -19,10 +19,10 @@ namespace Decorator
             throw new NotImplementedException();
         }
 
-        public override void SetWeaponSprite()
+        /*public override void SetWeaponSprite()
         {
             weaponTexture = new Texture("Assets/GreenWeapon.bmp"); //Trouver sprite pour weapon vert
             weaponSprite = new Sprite(weaponTexture);
-        }
+        }*/
   }
 }

@@ -6,7 +6,7 @@ namespace Decorator
     {
         public RedPlayerDecorator(Component baseComponent) : base(baseComponent)
         {
-            SetSprite();
+            SetShape();
         }
 
         protected override void SetMovementSpeed()
@@ -14,7 +14,7 @@ namespace Decorator
             speed = 5f;
         }
         
-        public override void SetSprite()
+        public override void SetShape()
         {
             //playerTexture = new Texture("Assets/Pacman.bmp");
             //playerSprite = new Sprite(playerTexture);
