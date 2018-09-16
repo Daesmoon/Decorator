@@ -42,5 +42,10 @@ namespace Decorator
         {
             return playerSprite.Position;
         }
+
+        public override void Draw(RenderWindow window)
+        {
+            window.Draw(playerSprite);
+        }
     }
 }

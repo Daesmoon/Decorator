@@ -25,5 +25,10 @@ namespace Decorator
         {
             throw new System.NotImplementedException();
         }
+
+        public override void Draw(RenderWindow window)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

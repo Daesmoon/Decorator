@@ -15,6 +15,11 @@ namespace Decorator
 
         }
 
+        public override void Draw(RenderWindow window)
+        {
+            throw new NotImplementedException();
+        }
+
         public override Vector2f GetPosition()
         {
             throw new NotImplementedException();

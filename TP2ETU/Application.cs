@@ -38,7 +38,7 @@ namespace Decorator
             window.KeyReleased += new EventHandler<KeyEventArgs>(OnKeyReleased);
             window.SetFramerateLimit(MAX_FPS);
 
-            //System.Windows.Forms.Form form = new System.Windows.Forms.Form();
+            System.Windows.Forms.Form form = new System.Windows.Forms.Form();
             //form.Site = 
         }
 

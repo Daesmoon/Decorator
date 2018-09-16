@@ -36,7 +36,7 @@ namespace Decorator
                 redPlayer.Move(1);
             }
 
-            redPlayer.GetSprite().Position = redPlayer.GetPosition();
+            //redPlayer.GetSprite().Position = redPlayer.GetPosition();
         }
 
         public void Draw(RenderWindow window)
@@ -50,8 +50,8 @@ namespace Decorator
                 }
             }
 
-            
-            window.Draw(redPlayer.GetSprite());              
+            redPlayer.Draw(window);
+            //window.Draw(redPlayer.GetSprite());              
         }
     }
 }

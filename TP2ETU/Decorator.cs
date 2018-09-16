@@ -15,9 +15,8 @@ namespace Decorator
         protected Sprite weaponSprite;
         protected Texture playerTexture;
         protected Sprite playerSprite;
-        protected Vector2f position = new Vector2f(200, 200);
-        protected float speed;
-
+        protected Vector2f position;
+        protected float speed = 5;
 
         protected Decorator(Component baseComponent)
         {
@@ -40,11 +39,6 @@ namespace Decorator
 
         public override void Move(int direction)
         {
-            /*if (direction > 0)
-            {
-                playerSprite.TextureRect(IntRect(0, 0, playerTexture.Size.X, -playerTexture.Size.Y));
-                playerSprite.Scale(-1, 1);
-            }*/
             position.X = position.X + direction * speed;
 
             playerSprite.Position = position;

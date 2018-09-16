@@ -16,5 +16,6 @@ namespace Decorator
         public abstract void Move(int direction);
         public abstract Sprite GetSprite();
         public abstract Vector2f GetPosition();
+        public abstract void Draw(RenderWindow window);
     }
 }

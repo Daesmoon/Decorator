@@ -31,5 +31,10 @@ namespace Decorator
         {
             return position;
         }
+
+        public override void Draw(RenderWindow window)
+        {
+            window.Draw(playerSprite);
+        }
     }
 }
